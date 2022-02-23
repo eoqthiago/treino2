@@ -1,6 +1,6 @@
 
 function compras(){
-    let usuario = 10;
+    let usuario = 50;
     let pedido1 = 15;
     let pedido2 = 25;
     let desconto = 20;
@@ -13,7 +13,7 @@ function compras(){
     if ( usuario < pedido1){
         console.log("Seu saldo é Insuficiente!")
     } else if (usuario >= pedido1){
-        console.log(`Seu Pedido Já esta sendo Feito: Arroz, Frango e Feijão Por R$15 usando o cupom de R$ ${cupom} saiu por:`, pedido1 - cupom, ` seu saldo é de: ${soma}` );
+        console.log(`Seu Pedido Já esta sendo Feito: Arroz, Frango e Feijão Por R$15 usando o cupom de R$ ${cupom} saiu por: R$${soma1} seu saldo é de: ${soma}` );
 
     } 
 }
