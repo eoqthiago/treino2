@@ -110,5 +110,59 @@ let HipoCalculo = hipo(4, 5);
 console.log ("Calculo Hipotenusa", HipoCalculo);
 
 
+// Implementar uma função para verificar se um aluno passou ou não, baseado em 3 notas, considerando que a média mínima para passar é 5
+
+function passou (nota1, nota2, nota3){
+    let notas = (nota1 + nota2 + nota3) / 3;
+    let media = notas >= 5;
+    return media;
+}
+
+let passou1 = passou(4, 9, 2);
+console.log("ALUNO PASSOU DE ANO: ",passou1);
+
+
+//Implementar uma função para verificar se dois quadrados possuem a mesma área.
+
+function mesmoquadrado (lado1, lado2){
+    let area1 = lado1 * lado1;
+    let area2 = lado2 * lado2;
+
+    let igual = area1 == area2;
+    return igual;
+}
+
+let quadrados = mesmoquadrado(3, 3);
+console.log("OS QUADRADOS POSSUI A MESMA AREA: ", quadrados);
+
+//Implementar uma função para verificar se dois retângulos possuem a mesma área.
+
+function retalgulos (bas1, alt1, bas2, alt2){
+    let area1 = bas1 * alt1;
+    let area2 = bas2 * alt2;
+    let igual = area1 == area2;
+    return igual;
+}
+
+let resultadoRetangulo = retalgulos(6, 7, 6, 7);
+console.log("OS RETANGULOS POSSUI A MESMA AREA: ", resultadoRetangulo);
+
+//Implementar uma função para verificar se três triângulos possuem a mesma área.
+
+function triangulos (bas1, alt1, bas2, alt2, bas3, alt3){
+    let area1 = (bas1 * alt1) / 2;
+    let area2 = (bas2 * alt2) / 2;
+    let area3 = (bas3 * alt3) / 2;
+
+    let resultado = area1 == area2 && area3;
+    return resultado;
+}
+
+let areas = triangulos(15, 20, 7, 13, 16, 9);
+console.log("OS 3 TRIANGULOS POSSUI A MESMA AREA: ",areas);
+
+
+
+
 
 

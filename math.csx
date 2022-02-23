@@ -106,3 +106,5 @@ public double hipo (double cateto1, double cateto2)
 }
 double HipoCalculo = hipo(4, 5);
 Console.WriteLine( HipoCalculo);
+
+// Implementar uma função para verificar se um aluno passou ou não, baseado em 3 notas, considerando que a média mínima para passar é
