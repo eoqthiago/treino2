@@ -108,3 +108,62 @@ double HipoCalculo = hipo(4, 5);
 Console.WriteLine( HipoCalculo);
 
 // Implementar uma função para verificar se um aluno passou ou não, baseado em 3 notas, considerando que a média mínima para passar é
+
+// function mesmoquadrado (lado1, lado2){
+//     let area1 = lado1 * lado1;
+//     let area2 = lado2 * lado2;
+
+//     let igual = area1 == area2;
+//     return igual;
+// }
+
+// let quadrados = mesmoquadrado(3, 3);
+// console.log("OS QUADRADOS POSSUI A MESMA AREA: ", quadrados);
+
+// public bool qua( double lado1, double lado2)
+// {
+//     double area1 = lado1 * lado1;
+//     double area2 = lado2 * lado2;
+//     bool igual = area1 == area2;
+//     return igual;
+// }
+
+// bool ae = qua(2, 2);
+// Console.WriteLine("resultado: {0}", ae)
+
+
+public bool passou (double n1, double n2, double n3)
+{
+    double notas = (n1 + n2 + n3) / 3;
+    bool media = notas >= 5;
+    return media; 
+}
+
+bool passou1 = passou(4, 9, 2);
+Console.WriteLine(passou1);
+
+
+
+public bool retangulos (double bas1, double alt1, double bas2, double alt2)
+{
+    double area1 = bas1 * alt1;
+    double area2 = bas2 * alt2;
+    bool resultado = area1 == area2;
+    return resultado;
+}
+
+bool resu = retangulos(6, 7, 4, 3);
+Console.WriteLine(resu);
+
+
+public bool triangulos (double bas1, double alt1, double bas2, double alt2, double bas3, double alt3)
+{
+    double area1 = (bas1 * alt1) / 2;
+    double area2 = (bas2 * alt2) / 2;
+    double area3 = (bas3 * alt3) / 2;
+    bool resultado = area1 == area2 && area1 == area3;
+    return resultado;
+}
+
+bool resx = triangulos(10, 10, 10, 10, 10, 10);
+Console.WriteLine(resx);

@@ -154,11 +154,11 @@ function triangulos (bas1, alt1, bas2, alt2, bas3, alt3){
     let area2 = (bas2 * alt2) / 2;
     let area3 = (bas3 * alt3) / 2;
 
-    let resultado = area1 == area2 && area3;
+    let resultado = area1 == area2 && area1 == area3;
     return resultado;
 }
 
-let areas = triangulos(15, 20, 7, 13, 16, 9);
+let areas = triangulos(10, 10, 10, 10, 10, 10);
 console.log("OS 3 TRIANGULOS POSSUI A MESMA AREA: ",areas);
 
 
